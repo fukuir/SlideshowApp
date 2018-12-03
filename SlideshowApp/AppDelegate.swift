@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  SlideshowApp
-//
-//  Created by 福井千裕 on 2018/11/26.
-//  Copyright © 2018年 fukuir. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
