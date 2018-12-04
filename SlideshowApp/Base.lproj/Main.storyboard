@@ -45,7 +45,7 @@
                                 <state key="normal" image="IMG_5588.JPG"/>
                                 <connections>
                                     <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1Z-LX-G5v"/>
-                                    <segue destination="aou-b4-SRm" kind="show" id="12D-LD-URk"/>
+                                    <segue destination="teT-bd-GS1" kind="show" id="gHp-vF-WVZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -76,44 +76,44 @@
             <point key="canvasLocation" x="37.600000000000001" y="33.733133433283363"/>
         </scene>
         <!--Image View Controller-->
-        <scene sceneID="BSB-lW-S2f">
+        <scene sceneID="psq-2Y-eXh">
             <objects>
-                <viewController id="aou-b4-SRm" customClass="ImageViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WKB-S7-gj6">
+                <viewController id="teT-bd-GS1" customClass="ImageViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vhc-XV-gw5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ug1-UI-Tdn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wfw-9U-dGU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twK-bo-Y1p">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muU-7d-sQG">
                                 <rect key="frame" x="100" y="577" width="175" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="rRa-x3-A3w" kind="unwind" unwindAction="button:" id="XRq-7b-LKO"/>
+                                    <segue destination="0cu-wN-68h" kind="unwind" unwindAction="button:" id="r4J-KV-1Mh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="c2i-RT-TGO" firstAttribute="bottom" secondItem="twK-bo-Y1p" secondAttribute="bottom" constant="60" id="B0h-6P-OaB"/>
-                            <constraint firstItem="twK-bo-Y1p" firstAttribute="leading" secondItem="c2i-RT-TGO" secondAttribute="leading" constant="100" id="JMU-xW-CW6"/>
-                            <constraint firstItem="c2i-RT-TGO" firstAttribute="trailing" secondItem="twK-bo-Y1p" secondAttribute="trailing" constant="100" id="UZ1-i7-2xa"/>
-                            <constraint firstItem="ug1-UI-Tdn" firstAttribute="top" secondItem="WKB-S7-gj6" secondAttribute="top" id="W84-Iw-jgm"/>
-                            <constraint firstItem="ug1-UI-Tdn" firstAttribute="trailing" secondItem="c2i-RT-TGO" secondAttribute="trailing" id="nMB-Uz-9mw"/>
-                            <constraint firstItem="ug1-UI-Tdn" firstAttribute="leading" secondItem="c2i-RT-TGO" secondAttribute="leading" id="oJD-ie-2uj"/>
-                            <constraint firstItem="ug1-UI-Tdn" firstAttribute="bottom" secondItem="c2i-RT-TGO" secondAttribute="bottom" id="pBB-CD-dFO"/>
+                            <constraint firstItem="kdL-Xs-1wP" firstAttribute="bottom" secondItem="muU-7d-sQG" secondAttribute="bottom" constant="60" id="3WP-7w-IBC"/>
+                            <constraint firstItem="wfw-9U-dGU" firstAttribute="leading" secondItem="kdL-Xs-1wP" secondAttribute="leading" id="4w5-SJ-NxW"/>
+                            <constraint firstItem="kdL-Xs-1wP" firstAttribute="trailing" secondItem="muU-7d-sQG" secondAttribute="trailing" constant="100" id="6tl-dT-SjS"/>
+                            <constraint firstItem="wfw-9U-dGU" firstAttribute="top" secondItem="Vhc-XV-gw5" secondAttribute="top" id="AFH-2g-gma"/>
+                            <constraint firstItem="kdL-Xs-1wP" firstAttribute="trailing" secondItem="wfw-9U-dGU" secondAttribute="trailing" id="kVK-fS-iVa"/>
+                            <constraint firstItem="muU-7d-sQG" firstAttribute="leading" secondItem="kdL-Xs-1wP" secondAttribute="leading" constant="100" id="kYz-Ms-qHJ"/>
+                            <constraint firstItem="kdL-Xs-1wP" firstAttribute="bottom" secondItem="wfw-9U-dGU" secondAttribute="bottom" id="rfs-af-mhB"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="c2i-RT-TGO"/>
+                        <viewLayoutGuide key="safeArea" id="kdL-Xs-1wP"/>
                     </view>
                     <connections>
-                        <outlet property="imageview" destination="ug1-UI-Tdn" id="Ltf-Zz-KDX"/>
+                        <outlet property="imageview" destination="wfw-9U-dGU" id="qD9-kT-TvZ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pb0-f2-0pb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="rRa-x3-A3w" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KI9-GK-NMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0cu-wN-68h" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="725.60000000000002" y="33.733133433283363"/>
+            <point key="canvasLocation" x="842.39999999999998" y="34.632683658170919"/>
         </scene>
     </scenes>
     <resources>
